@@ -18,7 +18,7 @@ const puppeteer = require('puppeteer');
   await page.waitForSelector('#userCity');
 
   const userCity = await page.$eval('#userCity', element => element.textContent);
-
+  
   if (userCity === 'Gwenborough') {
     console.log(`Місто користувача співпадає з очікуваним результатом: ${userCity}`);
   } else {
